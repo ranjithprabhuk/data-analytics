@@ -1,0 +1,46 @@
+﻿<!-------------------------------------------------------- 
+	Application	    : Data Analytics Tool
+	Author			: Ranjithprabhu K [ http://ranjithprabhu.in ]
+    Date created    : 02 Jan 2017
+	Version			: 1.0.0
+	 
+---------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analytics</title>
+    <meta name="description" content="Data Analytics Tool" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+
+    <!--CSS-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body ng-app="dataAnalytics">
+    <!--Scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router-min.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.13.0.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+	<script src="node_modules/angular-chart/dist/angular-chart.js"></script>
+
+    <!--Common-->
+
+    <script src="app/common/config.js"></script>
+
+    <!--main app-->
+    <script src="app/app.js"></script>
+    <script src="app/common/appCtrl.js"></script>
+    <script src="app/services/apiService.js"></script>
+
+    <ui-view></ui-view>
+
+</body>
+
+</html>
