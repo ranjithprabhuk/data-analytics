@@ -13,7 +13,7 @@ var appConfig = {
     title: "Data Analytics Tool",
     lang: "en",
     dateFormat: "mm/dd/yy",
-    apiBase: 'http://192.168.168.213:3000/api/',
+    apiBase: '/analytics/json/',
     theme: 'skin-purple',
     layout:""
 };

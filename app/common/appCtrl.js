@@ -7,8 +7,8 @@
     s.no      date    author     description     
  ===========================================================*/
 
-app.controller("appCtrl", ['$rootScope', '$scope', '$state', '$location', 'appSettings',
-    function ($rootScope, $scope, $state, $location, appSettings) {
+app.controller("appCtrl", ['$rootScope', '$scope', '$state', '$location', 'appSettings','apiService',
+    function ($rootScope, $scope, $state, $location, appSettings,apiService) {
 
 
         var vm = this;
@@ -20,6 +20,20 @@ app.controller("appCtrl", ['$rootScope', '$scope', '$state', '$location', 'appSe
             [65, 59, 80, 81, 56, 55, 40],
             [28, 48, 40, 19, 86, 27, 90]
         ];
+
+        vm.loadDatafromApi = function(){
+            apiService.get('stocks.json').then(function(response){
+                console.log("response>>",response);
+            });
+        };
+
+
+        //get key values of the api data
+        vm.getRows = function(){
+
+        };
+
+        vm.loadDatafromApi();
 
 
         console.log('getting in to the app controller');
